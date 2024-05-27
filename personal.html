@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website By Sinan op</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="personal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/IMG_20230314_224537_387.jpg" type="image/x-icon">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Yh2MtcjUigFtl77_0",
+      });
+   })();
+</script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-window-close' onclick="closemenu()"></i>
+
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I am <span>Sinan op</span>.<br> From Kerela,India</h1>
+
+        </div>
+    </div>
+
+    <!-- -------------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="img2" src="images/IMG_20230314_224537_387.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nulla perferendis mollitia itaque
+                        possimus. Sunt consequuntur ea sequi nesciunt. Nemo delectus quo sunt magni odit. Culpa
+                        aspernatur consequuntur laudantium est.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios Apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios Apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios Apps </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- --------------------services------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title s"> My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code-alt'></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum nobis, nesciunt
+                            tempore quaerat voluptates optio, dolorem temporibus consequuntur voluptate.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        <i class='bx bxs-crop'></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum nobis, nesciunt
+                            tempore quaerat voluptates optio, dolorem temporibus consequuntur voluptate.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-sort-a-z'></i>
+                        <h2>App Design</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum nobis, nesciunt
+                            tempore quaerat voluptates optio, dolorem temporibus consequuntur voluptate.</p>
+                        <a href="#">Learn more...</a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ------------------portfolio--------------- -->
+        <div id="portfolio">
+            <div class="container">
+
+
+                <h1 class="sub-title"> My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img class="car"
+                            src="images/luxurious-car-parked-highway-with-illuminated-headlight-sunset.png">
+                        <div class="layer">
+                            <h3>Online Business</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img class="car"
+                            src="images/luxurious-car-parked-highway-with-illuminated-headlight-sunset.png">
+                        <div class="layer">
+                            <h3>Social Business</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+
+        </div>
+
+        <!-- --------------------contact--------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-titel">Contact Me</h1>
+                        <p><i class='bx bx-send'></i>contact@example.come</p>
+                        <p><i class='bx bx-phone'></i>2134567890</p>
+                        <div class="social-icon">
+                            <a href="https//facebook.com/"><i class='bx bxl-facebook'></i></a>
+                            <a href=""><i class='bx bxl-instagram'></i></a>
+
+                            <a href=""><i class='bx bxl-twitter'></i></a>
+                            <a href=""><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                        <a class=" btn2"
+                            href="images/luxurious-car-parked-highway-with-illuminated-headlight-sunset.png">Download
+                        </a>
+                    </div>
+                    <div class="contact-right">
+                        
+                            <input type="text" name="Name" placeholder="Your Name" required id="name">
+                            <input type="email" name="" placeholder="Your Email" required id="email">
+                            <textarea name="Message" rows="6" placeholder="Your Message" required id="message"></textarea>
+                            <button type="submit" class="btn3" onclick="sendMail()">Submit</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Thanks For Visite My Website<i class='bx bxs-heart'></i></p>
+            </div>
+        </div>
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classlist.remove(active - link);
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classlist.remove("active-tab");
+
+                }
+                event.currentTarget.classlist.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+            var sidemeu = document.getElementById("sidemenu")
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-200px";
+            }
+
+
+            function sendMail(){
+                var params ={
+                    name:document.getElementById("name").value,
+                    email:document.getElementById("email").value,
+                    message:document.getElementById("message").value
+                }
+
+                const serviceId = "service_zubhpnf";
+                const templateId = "template_h3916y9";
+
+                emailjs.send(serviceId, templateId, params).then((res)=>{
+                    document.getElementById("name").value ="";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+
+                    console.log(res);
+
+                    alert("Your Message Sent Successfully")
+                }).catch((err)=>{
+                    console.log(err);
+                })
+            }
+
+
+
+        </script>
+</body>
+
+</html>
